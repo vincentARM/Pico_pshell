@@ -1,6 +1,7 @@
 # Pico_pshell
 assembly program for pshell pico.
-##ENGLIGH
+## English:
+
 Create on windows or Linux, a working directory.
 
 Copy the Makefile, memmap.ld, functionsC.inc files and your assembler source program.
@@ -13,7 +14,8 @@ Correct any errors or transfer the executable to the pico using xput nomexecpico
 
 picoexecname must match an executable program name already created on the pico. This executable can be created by compiling a simple C program with the cc compiler.
 
-##FRANCAIS
+## Français :
+
 Créer sur windows ou Linux, un répertoire de travail.
 Copier les fichiers Makefile, memmap.ld, functionsC.inc et votre programme source assembleur.
 
