@@ -1,7 +1,6 @@
-/* pour test pgm assembleur avec pShell */
+/* minimum assembly program for use with pShell */
 .cpu cortex-m0plus
 .thumb
-.data
 .text
 .global main
 main:
