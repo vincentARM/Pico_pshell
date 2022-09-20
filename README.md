@@ -64,4 +64,6 @@ Here is a typical example of calling the printf function
 .align 2                  // data alignement
 iAdrszMessage:    .int szMessage     
 ```
+see other example programs.
 
+Thank to Lurk101 Dwelch67 and to the other people who help with the programming of the pico.
