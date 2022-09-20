@@ -48,7 +48,11 @@ In assembler on the pico, there is no call to the operating system and therefore
 Pshell being a very simple system, it does not provide a mechanism to call these functions. It is therefore necessary to know the addresses of each function, addresses which may vary depending on the version of pshell.
 
 This is why these addresses are described in the functionsC.inc file to be included in each assembler source.
-Attention the file in the examples concerns the version of pshell and it is to be completed for the other C functions not referenced.
+Attention the file in the examples concerns the version of pshell : 
+
+Pico Shell v1.2.13-1-g9f1f47d, LittleFS v2.5, Vi 0.9.1, SDK v1.4.0
+
+and it is to be completed for the other C functions not referenced.
 
 It will have to be modified for each new version of pshell unless I find the explanation for the relocation (and of course the assembler programs have to be recompiled with each new version of pshell.
 
