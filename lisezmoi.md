@@ -44,4 +44,27 @@ L'utilisation de l'utilitaire as permet de reprendre toutes les fonctionnalités
 
 pshell ne gére pas la section bss donc les programmes devront initialisés les données si necessaire.
 
+En assembleur sur le pico, il n'y a pas d'appel au système d'exploitation et donc il faut utiliser les fonctions C de la libraire utilisée par pshell.
+Pshell étant un système très simple, il ne fournit pas de mécanisme pour appeler ces fonctions. Il est donc necessaire de connaitre les adresses de chaque fonction, adresses qui peuvent varier en fonction de la version de pshell.
+
+C'est pourquoi ces adresses sont décrites dans le  fichier functionsC.inc à inclure dans chaque source assembleur.
+Attention le fichier dans les exemples concerne la version de pshell    et il est à compléter pour les autres fonctions C non référencées.
+
+Il sera à modifier pour chaque nouvelle version de pshell à moins que je trouve l'explication de la relocation (et bien sûr les programmes assembleurs sont à recompiler à chaque nouvelle version de pshell.
+
+Voici un exemple type d'appel de la fonction printf 
+```asm
+     ldr r0,iAdrszMessage // message address
+     push {r0}            // function parameter
+     mov r0,#1            // one parameter
+     ldr r6,iAdrPrintf    // address function C printf
+     blx r6               // call function
+     add sp,#4            // stack alignement for one push 
+     
+iAdrPrintf:       .int printf  
+```
+
+Voir les autres exemples de programmes.
+
+
 
