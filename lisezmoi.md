@@ -66,5 +66,5 @@ iAdrPrintf:       .int printf
 
 Voir les autres exemples de programmes.
 
-
+Remerciements à Lurk101 dwelch67 et toute personne qui aide à la programmation sur le Pico.
 
