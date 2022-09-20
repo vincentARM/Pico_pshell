@@ -6,7 +6,8 @@ pgmMini.s : assembly program minimum (no c function call)
 
 lectecr.s : file io  write a file and read the same file 
 
-   résult :  ```
+   résult :
+```
 Debut du programme.
 Valeur du registre = 20008bb8
 Ecriture fichier OK
