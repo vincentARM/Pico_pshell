@@ -15,5 +15,4 @@ Contenu du buffer : ABCDEFGHIJK
 Fin Ok du programme.
 
 CC = 0
-
-             ```
+```
