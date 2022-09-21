@@ -2,7 +2,6 @@
 /*********************************************/
 /*           CONSTANTES                      */
 /********************************************/
-.include "functionsC.inc"
 .equ LED_PIN, 25
 .equ GPIO_FUNC_SIO,   5
 
@@ -35,7 +34,6 @@
 /*  datas                                  */
 /*******************************************/
 .data 
-szAffReg:   .asciz   "Valeur du registre = %x\n"
 /*******************************************/
 /*  code                                  */
 /*******************************************/
@@ -91,19 +89,6 @@ attendre:
     sub r0,r1
     bne 1b
     bx lr
-      
-affreg:
-     push {r6,lr}
-     ldr r1,iAdrszAffReg
-     push {r1}
-     push {r0}
-     mov r0,#2                // nombre de paramètres
-     ldr r6,iAdrPrintf        // fonction librairie C
-     blx r6
-     add sp,sp,#8             // 2 push 
-     pop {r6,pc}
 
 .align 2
 iAdrGPIO_25_CTRL:   .int GPIO_25_CTRL
-iAdrszAffReg:       .int szAffReg
-iAdrPrintf:         .int printf
