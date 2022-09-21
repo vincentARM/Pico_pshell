@@ -16,3 +16,22 @@ Fin Ok du programme.
 
 CC = 0
 ```
+
+readString.s   read a string to keyboard ans display the string with putchar
+  résult :
+```
+Debut du programme.
+Saisir une chaine de caractères (fin pour finir) :
+abcdefghij
+abcdefghij
+Saisir une chaine de caractères (fin pour finir) :
+123456
+123456
+Saisir une chaine de caractères (fin pour finir) :
+fin
+fin
+Fin Ok du programme.
+
+CC = 0
+
+```
