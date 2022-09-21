@@ -67,6 +67,9 @@ Voici un exemple type d'appel de la fonction printf
      
 iAdrPrintf:       .int printf  
 ```
+Dans cet appel, le nombre de paramètres est variable, ils sont donc mis sur la pile et leur nombre est passé dans le registre r0.
+
+Pour des appels de fonctions avec un nombre de paramètres fixes, ceux çi sont passés dans les registres r0,r1,r2 etc.
 
 Voir les autres exemples de programmes.
 
