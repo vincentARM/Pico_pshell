@@ -35,3 +35,5 @@ Fin Ok du programme.
 CC = 0
 
 ```
+
+lightLed.s  :  touch pin 16 with finger and the led flashes 3 times (type q for stop program)
