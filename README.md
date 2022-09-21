@@ -68,6 +68,10 @@ Here is a typical example of calling the printf function
 .align 2                  // data alignement
 iAdrszMessage:    .int szMessage     
 ```
+In this call, the number of parameters is variable, so they are put on the stack and their number is passed in the register r0.
+
+For function calls with a fixed number of parameters, those are passed in registers r0,r1,r2 etc.
+
 see other example programs.
 
 Thank to Lurk101 Dwelch67 and to the other people who help with the programming of the pico.
