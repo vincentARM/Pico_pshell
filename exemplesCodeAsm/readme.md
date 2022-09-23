@@ -37,3 +37,6 @@ CC = 0
 ```
 
 lightLed.s  :  touch pin 16 with finger and the led flashes 3 times (type q for stop program)
+
+**testmalloc.c** : example macros to display a text.  Test the function C malloc.
+
