@@ -9,3 +9,5 @@
 .equ read,               0x1000a761
 .equ close,              0x1000af79
 .equ lssek,              0x1000a491
+.equ malloc,             0x1000acb1
+.equ free,               0x1000ab99
