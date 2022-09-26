@@ -50,5 +50,27 @@ Fin Ok du programme.
 CC = 0
 
 ```
+**countercycle.s**  : instructions cycles counter
 
+Résult :
+
+```
+Debut du programme.
+controle
+Comptage cycles à vide (13 cycles)
+Nombre de cycles = 13
+Comptage 1 instruction (14 cycles)
+Nombre de cycles = 14
+Comptage affichage libellé
+Pour test
+Nombre de cycles = 16490
+Comptage un putchar
+ANombre de cycles = 1223
+Fin Ok du programme.
+
+CC = 0
+
+```
+
+**variaLed.s**  :   LED brightness dimming
 
