@@ -40,7 +40,7 @@ cc -o nomexecpico hello.c
 
 ### Ecriture d'un programme assembleur pour pshell.
 
-L'utilisation de l'utilitaire as permet de reprendre toutes les fonctionnalités pour l'écriture : syntaxe, include,  macros.
+L'utilisation de l'utilitaire as permet de reprendre toutes les fonctionnalités pour l'écriture : syntaxe, include,  macros, structures.
 
 pshell ne gére pas la section bss donc les programmes devront initialiser les données si necessaire.
 
