@@ -42,7 +42,7 @@ cc -o nomexecpico hello.c
 
 L'utilisation de l'utilitaire as permet de reprendre toutes les fonctionnalités pour l'écriture : syntaxe, include,  macros.
 
-pshell ne gére pas la section bss donc les programmes devront initialisés les données si necessaire.
+pshell ne gére pas la section bss donc les programmes devront initialiser les données si necessaire.
 
 En assembleur sur le pico, il n'y a pas d'appel au système d'exploitation et donc il faut utiliser les fonctions C de la libraire utilisée par pshell.
 Pshell étant un système très simple, il ne fournit pas de mécanisme pour appeler ces fonctions. Il est donc necessaire de connaitre les adresses de chaque fonction, adresses qui peuvent varier en fonction de la version de pshell.
