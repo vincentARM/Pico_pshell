@@ -47,14 +47,17 @@ pshell does not support the bss section so programs will need to initialize the 
 In assembler on the pico, there is no call to the operating system and therefore you have to use the C functions of the library used by pshell.
 Pshell being a very simple system, it does not provide a mechanism to call these functions. It is therefore necessary to know the addresses of each function, addresses which may vary depending on the version of pshell.
 
-This is why these addresses are described in the functionsC.inc file to be included in each assembler source.
+This is why initially the addresses of the first functions used are described in the functionsC.inc file to be included in each assembler source.
+
+After analysis, I created a program in C cretabfctpshell.c which recovers all the addresses of the functions from the files resulting from the compilation of pshell on the PC.
+
+The result is visible in the functionsC1.inc file.
+
 Attention the file in the examples concerns the version of pshell : 
 
 Pico Shell v1.2.13-1-g9f1f47d, LittleFS v2.5, Vi 0.9.1, SDK v1.4.0
 
-and it is to be completed for the other C functions not referenced.
-
-It will have to be modified for each new version of pshell unless I find the explanation for the relocation (and of course the assembler programs have to be recompiled with each new version of pshell.
+It will have to be modified for each new version of pshell unless I find the explanation for the relocation (and of course the assembler programs have to be recompiled with each new version of pshell).
 
 Here is a typical example of calling the printf function
 ```asm
