@@ -1,4 +1,3 @@
-/*  touch pin 16 with a finger to light led  pShell */
 /*  to stop this program type q on the keyboard */
 .syntax unified
 .cpu cortex-m0plus
