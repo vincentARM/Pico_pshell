@@ -76,3 +76,23 @@ CC = 0
 
 **aceyducey.s** :   cards game 
 
+**paramPshell.s** : display parameters command line
+
+résult :
+
+```
+/asm/: exec1 john pierre
+
+Programm start.
+
+ Hello  john
+ 
+ Hello  pierre
+ 
+End programm
+
+CC = 0
+
+```
+
+
