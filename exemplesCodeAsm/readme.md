@@ -77,6 +77,10 @@ CC = 0
 **aceyducey.s** :   cards game 
 
 **paramPshell.s** : display parameters command line
+Attention version pshell 1.2.13
+
+**paramPshell1.s** : display parameters command line
+Attention version pshell 1.2.16 (the file functionC1.inc must be in phase with this version)
 
 résult :
 
