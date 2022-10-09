@@ -77,10 +77,7 @@ CC = 0
 **aceyducey.s** :   cards game 
 
 **paramPshell.s** : display parameters command line
-Attention version pshell 1.2.13
 
-**paramPshell1.s** : display parameters command line
-Attention version pshell 1.2.16 (the file functionC1.inc must be in phase with this version)
 
 résult :
 
@@ -94,6 +91,25 @@ Programm start.
  Hello  pierre
  
 End programm
+
+CC = 0
+
+```
+
+**affRegBin.s** display RP2040 memory register
+
+Résult :
+```
+Program start.
+affichage registre mémoire
+
+Enter the address of a register (fin for end) :
+40064000
+Register display : 0x000010B1 0b00000000 00000000 00010000 10110001
+
+Enter the address of a register (fin for end) :
+fin
+Program end OK.
 
 CC = 0
 
