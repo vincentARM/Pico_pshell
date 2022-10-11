@@ -115,4 +115,15 @@ CC = 0
 
 ```
 
+**affTemp.s**    Temperature display
+Résult:
+```
+Température (q for end program).
+Température = 21.1385
+Fin Ok du programme.
+
+CC = 0
+
+```
+
 
